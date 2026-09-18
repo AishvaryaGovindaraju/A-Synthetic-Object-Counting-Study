@@ -1,0 +1,11 @@
+{
+  "e0_repeat_sampling": 0.23333333333333334,
+  "e0_perturbation_ensemble": 0.2,
+  "rule_agreement_repeat_pct": 96.66666666666667,
+  "rule_agreement_perturb_pct": 90.0,
+  "n_pilot_frames": 30,
+  "K_pilot": 5,
+  "salvaged_partial_n_images": 21,
+  "salvaged_partial_repeat_accuracy": 0.7142857142857143,
+  "salvaged_partial_perturb_accuracy": 0.7
+}
