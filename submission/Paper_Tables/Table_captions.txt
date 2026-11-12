@@ -1,0 +1,9 @@
+Table_1_stratified_precheck_results  (6 rows x 11 cols)
+Table 1: Stratified precheck and calibration results on the 30-image seed sample. Unanimous-error rate with exact Clopper-Pearson 95% confidence limits, majority-vote accuracy, and mean prediction-set size and auto-label yield at two target miscoverage levels, by scorer and frame subset. Set-size and yield entries average 400 random equal-sized calibration/test splits; at α = 0.10 every subset was trivial.
+
+Table_2_seed_sample_size  (12 rows x 5 cols)
+Table 2: Seed-sample size required for a reliable precheck decision. For each target miscoverage level and each assumed ratio of the true unanimous-error rate to that level, the minimum number of labeled seed images attaining 80% power in a one-sided exact binomial test at the 5% level, alongside the minimum calibration-set size imposed independently by condition C1.
+
+Table_of_Materials  (8 rows x 4 cols)
+TABLE OF MATERIALS:
+

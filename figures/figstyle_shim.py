@@ -12,5 +12,5 @@ def apply_figure_style():
         "legend.frameon": False, "figure.facecolor": "white", "axes.facecolor": "white",
     })
 
-def panel_letter(ax, letter):
-    ax.text(-0.16, 1.06, letter, transform=ax.transAxes, fontsize=9, fontweight="bold", va="top", ha="left")
+def panel_letter(ax, letter, dx=-0.20, dy=1.12):
+    ax.text(dx, dy, letter, transform=ax.transAxes, fontsize=9, fontweight="bold", va="bottom", ha="left")

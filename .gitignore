@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+*$py.class
+figures/__pycache__/
+manuscript_extracted.txt
+data/data_benchmark/
