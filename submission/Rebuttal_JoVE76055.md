@@ -36,7 +36,7 @@ Response:
 • Provide an institutional email address for Salil Bharany. If an institutional email address is unavailable, explain the exception to the editorial office.
 
 Response:
-As per the author team's internal agreement, the author metadata, full bylines, institutional affiliations, corresponding author designations, and institutional email details are being harmonized directly by the authors within the Editorial Manager submission portal to ensure complete 1:1 synchronization with the revised title page upon re-upload.
+The author byline is now finalized to 11 authors, matching the Editorial Manager record: Alcardo Alex Barakabitze (Department of Informatics and Information Technology, Sokoine University of Agriculture, Tanzania; corresponding author, per this office's correspondence), Aishvarya Govindaraju, Deepika Anandakumar, Boomika P Nair, Abishek Velu Manju, and Kirubavathi Ganapathiyappan (Department of Mathematics, Amrita Vishwa Vidyapeetham, Coimbatore, India), Jayanthi Govindaraju (Department of Economics, PSG College of Arts & Science, Coimbatore, India), Heba G. Mohamed (Department of Electrical Engineering, Princess Nourah bint Abdulrahman University, Saudi Arabia), Razaullah Ullah (College of Engineering, University of Business and Technology, Jeddah, Saudi Arabia), Salil Bharany (Chitkara University Institute of Engineering and Technology, Chitkara University, Punjab, India), and Ateeq Ur Rehman (School of Computing, Gachon University, Republic of Korea). All institutional emails are now provided for each author, including Salil Bharany's; the Razaullah Ullah / Razaullah Hafiz Ullah name-form question is resolved as the author-supplied form "Razaullah Ullah." Author Contributions have been completed accordingly, with Aishvarya Govindaraju credited as lead contributor (conceptualization, methodology, software, data curation, formal analysis, investigation, and writing – original draft for the precheck protocol, benchmark annotation pipeline, and statistical analysis).
 
 3. Keywords:
 • Add at least one relevant indexing term so that the manuscript and submission metadata contain at least six keywords.
@@ -59,14 +59,14 @@ All mathematical expressions—including nonconformity score s_i, calibration ra
 Response:
 - Numbering alignment: All figure citations have been systematically audited against the final figures: Figure 1 (Protocol Schematic), Figure 2 (Annotator Diagnostics: A: AUROC, B: Signed Error, C: K-ablation), Figure 3 (Worked Example: A: e0 by subset, B: Mean Set Size vs α, C: Yield vs α), and Figure 4 (Feasibility Conditions: A: C1 floor, B: C2 exact boundary, C: C3 power curves).
 - Citation fix: The erroneous citation "(Figure 3B, 4C; Table 1)" has been corrected to "**Figure 3B, 3C; Table 1**", which correctly points to Figure 3B for mean set size and Figure 3C for auto-label yield.
-- Calibration size reconciliation: We verified that in the 30-seed experiment, a 50/50 calibration/test split was executed, corresponding to n_cal = 15. The mention of n_cal = 21 in the original Figure 4B legend was a leftover from an exploratory 70/30 split. We have reconciled n_cal = 15 consistently across the Methods, Results, Figure 4, and Figure 4B caption. In the new 195-benchmark evaluation, n_cal = 97 is explicitly stated.
+- Calibration size reconciliation: We verified that in the 30-seed experiment, a 50/50 calibration/test split was executed, corresponding to n_cal = 15. The mention of n_cal = 21 in the original Figure 4B legend was a leftover from an exploratory 70/30 split. We have reconciled n_cal = 15 consistently across the Methods, Results, Figure 4, and Figure 4B caption. In the new 195-benchmark evaluation, n_cal = 98 (round(195/2)) is explicitly stated.
 
 6. Data Availability:
 • Replace ARCHIVED RELEASE DOI, VERSION, and all related placeholders with the final archived release information and an immutable DOI, accession number, or persistent repository identifier.
 • Identify the exact repository contents and filenames.
 
 Response:
-The DATA AVAILABILITY section has been updated with the permanent repository URL (https://github.com/AishvaryaGovindaraju/A-Synthetic-Object-Counting-Study, Version 1.0.0) and specifies the exact filenames deposited:
+The DATA AVAILABILITY section has been updated with the permanent repository URL (https://github.com/AishvaryaGovindaraju/A-Synthetic-Object-Counting-Study, Version 1.0.0) and its immutable archived-release DOI (10.5281/zenodo.24229415, verified to resolve to the Zenodo record for this release), and specifies the exact filenames deposited:
 - `data/benchmark_195_per_frame.csv`: complete raw responses and vote counts for all 195 benchmark frames across both scorers;
 - `data/a3_pilot_per_frame.csv`: raw responses and vote shares for the 30 seed frames;
 - `data/data_benchmark/`: all 195 generated image frames and binary masks across clean, moderate, and heavy tiers;
@@ -127,7 +127,7 @@ The Table of Materials has been completely finalized:
 
 Response:
 - Supplemental File 1: Provided containing complete reference scripts and verification routines.
-- Acknowledgments: A standalone ACKNOWLEDGMENTS section has been added after the Discussion acknowledging institutional computing support.
+- Acknowledgments: A standalone ACKNOWLEDGMENTS section has been added after the Discussion. Per the author team's confirmation, this study received no external or institutional funding and no specific grant; the section states this explicitly rather than listing unconfirmed support.
 - References: References 13 (Rohrbach et al.), 16 (Lei et al.), and 17 (Lu et al.) have been reformatted to the first author followed by "et al." because each has five authors. References 18 (IMAGPose) and 19 (IMAGDressing-v1) have been added.
 
 ================================================================================
@@ -143,7 +143,7 @@ Key empirical findings on the 195-frame benchmark include:
 - Ground-truth integrity: 100% exact agreement (195 of 195 images) between connected-component verification and realized labels across all noise regimes.
 - High annotator accuracy: 93.8% (183/195) under repeated sampling and 94.9% (185/195) under perturbation ensemble.
 - Low unanimous-error rate: Under repeated sampling, ê₀ = 0.041 (8/195, 95% CI [0.018, 0.079]); under the perturbation ensemble, ê₀ dropped to only 0.015 (3/195, 95% CI [0.003, 0.044]). In the moderate degradation tier, ê₀ was 0.000 (zero unanimous errors across 65 images).
-- Decisive GO decision: At α = 0.10, Condition C1 holds (n_cal = 97 ≥ 9), C2 holds (ê₀ = 0.015 ≤ 0.089), and C3 holds (upper 95% Clopper-Pearson bound 0.044 ≤ 0.089).
+- Decisive GO decision: At α = 0.10, Condition C1 holds (n_cal = 98 ≥ 9), C2 holds (ê₀ = 0.015 ≤ 0.089), and C3 holds (upper 95% Clopper-Pearson bound 0.044 ≤ 0.089).
 - Production auto-annotation yield: At α = 0.10, mean prediction set size is 1.05 with 94.9% singleton yield (empirical coverage 91.8%); at α = 0.20, set size is 1.02 with 95.4% singleton yield.
 
 These results have been integrated into a new subsection in Results, added to Table 1, and discussed in the revised manuscript. This demonstrates that when generator truncation is eliminated, the VLM annotator readily passes the precheck and produces high-yield conformal sets.
@@ -175,7 +175,8 @@ Comment 5: Reproducibility and related work need to be improved. The paper has n
 
 Response 5:
 - Full reproducibility details: The complete VLM identifier (Google Gemini 3.1 / 3.5 Flash Lite), API endpoints, sampling temperature (1.0), token budgets (16), and the exact prompt ("Count the dark blobs in this image. Reply with a single integer and nothing else.") are now documented in the Protocol and Table of Materials. The complete per-frame query responses for all 195 benchmark frames have been deposited in `data/benchmark_195_per_frame.csv`.
-- Discussion of IMAGPose and IMAGDressing-v1: In the Introduction and Discussion, we have incorporated discussion and citations for *IMAGPose* (Shen et al., 2024; reference 18) and *IMAGDressing-v1* (Shen et al., 2024; reference 19). We highlight that maintaining structural consistency, spatial fidelity, and conditional control is a central challenge in visual generative data construction. Our precheck protocol provides an automated statistical quality gate to detect generative truncation and label corruption before synthetic data is used for downstream training or auto-annotation.
+- Discussion of IMAGPose and IMAGDressing-v1: In the Introduction and Discussion, we have incorporated discussion and citations for *IMAGPose* (Shen & Tang, 2024; reference 18 — a two-author work, cited by surname rather than "et al.") and *IMAGDressing-v1* (Shen et al., 2024; reference 19). We highlight that maintaining structural consistency, spatial fidelity, and conditional control is a central challenge in visual generative data construction. Our precheck protocol provides an automated statistical quality gate to detect generative truncation and label corruption before synthetic data is used for downstream training or auto-annotation.
+- Citation verification: While auditing references for this revision, we checked references 13 (Rohrbach et al., EMNLP 2018, pp. 4035-4045), 17 (Lu et al., AAAI 2022, pp. 12008-12016), 18, and 19 against web-search results returning their dblp/arXiv/publisher records, and corrected an internal drafting error that had introduced incorrect page numbers and venue details for references 13 and 17 in an earlier working draft. Reference 18 (IMAGPose) is cited by its NeurIPS proceedings URL rather than a page range, since NeurIPS does not assign simple sequential page numbers to papers.
 
 ================================================================================
 PART 3: RESPONSES TO REVIEWER #2
@@ -204,6 +205,9 @@ Comment 4: Statistical power and uncertainty estimation. First, condition C3 is 
 Response 4:
 - Exact binomial test vs. Clopper-Pearson interval: Both methods are exact procedures derived from the identical Binomial cumulative distribution function. The two-sided 95% Clopper-Pearson upper bound ê_{0,upper} is the exact value θ for which P(Bin(n, θ) ≤ k) = 0.025. Sizing the seed sample via a one-sided exact binomial test of H₀: θ ≥ α at level 0.05 guarantees that if the true error rate is a given fraction of α, the experiment has ≥ 80% power to observe a count k whose upper bound satisfies Condition C2. In the revised text, we clarify this mathematical harmony.
 - Resampling splits vs. dataset uncertainty: We clarify that the 400 splits assess split-induced variance of the calibration quantile q̂, while the Clopper-Pearson confidence interval quantifies fundamental finite-sample binomial uncertainty over the underlying population error rate. The full 195-benchmark evaluation provides a large independent test set, narrowing the 95% confidence interval of ê₀ to [0.003, 0.044].
+
+- False-go and false-no-go behavior: We added a new Table 3 and a new Results subsection ("False-go and false-no-go rates of the decision rule"), with the simulation implemented as a Supplemental File 1 addendum, simulate_false_rates.py. By Monte Carlo simulation of the exact C1/C2/C3 rule (30,000 draws per configuration) at the study's two actual sample sizes, the false-go rate stayed at or below 0.84% at both alpha = 0.20 and alpha = 0.30, confirming the rule rarely overclaims feasibility. The false-no-go rate, however, revealed an important and previously unquantified gap: at the 30-image preliminary seed sample, with a true e0 only half of the decision threshold, the full joint rule returned NO-GO 95.7% of the time at alpha = 0.20 and 95.2% of the time at alpha = 0.30 -- far below the 80% power that the simpler one-sided sample-size calculation in Table 2 targets. This occurs because Table 2's calculation tests the true e0 against alpha directly, while the actual C2/C3 conditions test against a stricter, finite-sample threshold. At the same e0/alpha ratio, the 195-image confirmatory benchmark achieved 92.1% and 99.7% power at alpha = 0.20 and alpha = 0.30 respectively. We report this discrepancy explicitly in the revised Discussion as it sharpens the necessary-versus-sufficient point raised in Comment 3: satisfying C1-C3 is necessary for an informative prediction set, but a seed sample sized against alpha alone is not guaranteed to reach a correct decision under the rule actually applied.
+
 
 Comment 5: Reproducibility and incomplete methodological details. Provide the model name and version, API settings, complete prompts, sampling parameters, and exact implementation details. The corrected benchmark should also be accompanied by complete per-image evaluation records.
 
