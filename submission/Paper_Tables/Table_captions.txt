@@ -4,6 +4,9 @@ Table 1: Stratified precheck and calibration results on the 30-image seed sample
 Table_2_seed_sample_size  (12 rows x 5 cols)
 Table 2: Seed-sample size required for a reliable precheck decision. For each target miscoverage level and each assumed ratio of the true unanimous-error rate to that level, the minimum number of labeled seed images attaining 80% power in a one-sided exact binomial test at the 5% level, alongside the minimum calibration-set size imposed independently by condition C1.
 
+Table_3_false_go_no_go_rates  (20 rows x 10 cols)
+Table 3: Simulated false-go and false-no-go rates of the three-condition decision rule. For each target α and hypothesized ratio of the true unanimous-error rate e0 to α, 30,000 Monte Carlo seed samples were drawn at the study's two actual sample sizes and the exact C1/C2/C3 rule applied to each; the false-go rate is reported when the true e0 exceeds the decision threshold used by C2/C3, and the false-no-go rate when it does not.
+
 Table_of_Materials  (8 rows x 4 cols)
 TABLE OF MATERIALS:
 
