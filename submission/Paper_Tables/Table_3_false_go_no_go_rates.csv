@@ -1,0 +1,21 @@
+Seed sample,n,n_cal,Target alpha,True e0 / alpha,True e0,Decision threshold (C2/C3),Truly feasible (true e0 <= threshold),Simulated P(GO),False-go rate,False-no-go rate
+Preliminary seed sample,30,15,0.2,0.5,0.1,0.1333,True,0.0429,,0.9571
+Preliminary seed sample,30,15,0.2,0.75,0.15,0.1333,False,0.0078,0.0078,
+Preliminary seed sample,30,15,0.2,1.0,0.2,0.1333,False,0.0008,0.0008,
+Preliminary seed sample,30,15,0.2,1.25,0.25,0.1333,False,0.0002,0.0002,
+Preliminary seed sample,30,15,0.2,1.5,0.3,0.1333,False,0.0,0.0,
+Preliminary seed sample,30,15,0.3,0.5,0.15,0.2,True,0.0483,,0.9517
+Preliminary seed sample,30,15,0.3,0.75,0.225,0.2,False,0.0045,0.0045,
+Preliminary seed sample,30,15,0.3,1.0,0.3,0.2,False,0.0003,0.0003,
+Preliminary seed sample,30,15,0.3,1.25,0.375,0.2,False,0.0001,0.0001,
+Preliminary seed sample,30,15,0.3,1.5,0.45,0.2,False,0.0,0.0,
+Full confirmatory benchmark,195,98,0.2,0.5,0.1,0.1837,True,0.9208,,0.0792
+Full confirmatory benchmark,195,98,0.2,0.75,0.15,0.1837,True,0.2306,,0.7694
+Full confirmatory benchmark,195,98,0.2,1.0,0.2,0.1837,False,0.0045,0.0045,
+Full confirmatory benchmark,195,98,0.2,1.25,0.25,0.1837,False,0.0,0.0,
+Full confirmatory benchmark,195,98,0.2,1.5,0.3,0.1837,False,0.0,0.0,
+Full confirmatory benchmark,195,98,0.3,0.5,0.15,0.2857,True,0.9966,,0.0034
+Full confirmatory benchmark,195,98,0.3,0.75,0.225,0.2857,True,0.4782,,0.5218
+Full confirmatory benchmark,195,98,0.3,1.0,0.3,0.2857,False,0.0084,0.0084,
+Full confirmatory benchmark,195,98,0.3,1.25,0.375,0.2857,False,0.0,0.0,
+Full confirmatory benchmark,195,98,0.3,1.5,0.45,0.2857,False,0.0,0.0,
