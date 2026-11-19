@@ -1,4 +1,4 @@
-Seed sample,n,n_cal,Target alpha,True e0 / alpha,True e0,Decision threshold (C2/C3),Truly feasible (true e0 <= threshold),Simulated P(GO),False-go rate,False-no-go rate
+Seed sample,n,n_cal,Target α,True e0 / α,True e0,Decision threshold (C2/C3),Truly feasible (true e0 <= threshold),Simulated P(GO),False-go rate,False-no-go rate
 Preliminary seed sample,30,15,0.2,0.5,0.1,0.1333,True,0.0429,,0.9571
 Preliminary seed sample,30,15,0.2,0.75,0.15,0.1333,False,0.0078,0.0078,
 Preliminary seed sample,30,15,0.2,1.0,0.2,0.1333,False,0.0008,0.0008,
