@@ -102,7 +102,7 @@ Response:
   Step 4: DECIDE (evaluate feasibility conditions C1, C2, C3);
   Step 5: CONFIRM & AUTO-LABEL (the GO outcome: split conformal calibration on full dataset, assess coverage & yield).
   If any condition fails, the branch explicitly directs to NO-GO (halt to preserve budget, improve annotator, or resize).
-  A sixth element was added in this revision — the false-go/false-no-go rate simulation that validates the decision rule itself (Table 3) — but it is a validation of the rule, not an operational step a practitioner performs when running the precheck, so it is not drawn as a seventh schematic stage; the Figure 1 legend now states this explicitly to keep the text-figure correspondence complete without adding visual clutter to the workflow diagram.
+  A sixth element was added in this revision — the false-go/false-no-go rate simulation that validates the decision rule itself (Table 3) — but it is a validation of the rule, not an operational step a practitioner performs when running the precheck, so it is not drawn as a seventh schematic stage. Step 5 remains drawn as the GO outcome box (unchanged from the existing redesign described above); the Figure 1 legend now states explicitly that step 5 is the GO box and step 6 is reported in Results/Methods only, keeping the text-figure correspondence complete without adding visual clutter to the workflow diagram.
 
 8. Tables:
 • Use the α symbol consistently throughout the tables and manuscript.
