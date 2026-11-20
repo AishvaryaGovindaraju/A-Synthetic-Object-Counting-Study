@@ -72,7 +72,7 @@ Response:
 • Identify the exact repository contents and filenames.
 
 Response:
-The DATA AVAILABILITY section has been updated with the permanent repository URL (https://github.com/AishvaryaGovindaraju/A-Synthetic-Object-Counting-Study, Version 1.0.0) and its immutable archived-release DOI (10.5281/zenodo.24229415, verified to resolve to the Zenodo record for this release), and specifies the exact filenames deposited:
+The DATA AVAILABILITY section has been updated with the permanent repository URL (https://github.com/AishvaryaGovindaraju/A-Synthetic-Object-Counting-Study, Version 1.1.0) and its immutable archived-release DOI (10.5281/zenodo.24399479, verified to resolve to the Zenodo record for this release, which supersedes the earlier v1.0.0/zenodo.24229415 archive to include Table 3 and simulate_false_rates.py), and specifies the exact filenames deposited:
 - `data/benchmark_195_per_frame.csv`: complete raw responses and vote counts for all 195 benchmark frames across both scorers;
 - `data/a3_pilot_per_frame.csv`: raw responses and vote shares for the 30 seed frames;
 - `data/data_benchmark/`: all 195 generated image frames and binary masks across clean, moderate, and heavy tiers;
